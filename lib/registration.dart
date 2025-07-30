@@ -43,7 +43,7 @@ class Registrations extends StatelessWidget {
                 onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => singnuppages()),
+                    MaterialPageRoute(builder: (context) => Signuppage()),
                   );
                 },
                 child: Text("Sign up"),
@@ -56,7 +56,7 @@ class Registrations extends StatelessWidget {
                 onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => loginpages()),
+                    MaterialPageRoute(builder: (context) => Login()),
                   );
                 },
                 child: Text("Login"),
