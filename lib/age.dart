@@ -81,7 +81,7 @@ class _AgeState extends State<Age> {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => const Genderr(),
+                            builder: (context) => const Genders(),
                           ),
                         );
                       }

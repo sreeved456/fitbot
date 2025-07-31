@@ -91,7 +91,7 @@ class _LoginState extends State<Login> {
                       }
                       return null;
                     },
-                    keyboardType: TextInputType.visiblePassword,
+                    obscureText: true,
                     decoration: InputDecoration(
                       fillColor: Colors.white,
                       filled: true,
@@ -135,10 +135,7 @@ class _LoginState extends State<Login> {
                             password: passcontroller.text,
                             context: context,
                           );
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(builder: (context) => Age()),
-                          );
+                     login(email: emailcontroller.text.trim(), password: passcontroller.text.trim(), context: context);
                         }
                       },
                       child: const Text("Login"),
@@ -173,9 +170,7 @@ class _LoginState extends State<Login> {
                   ),
                   const SizedBox(height: 10),
                   const Image(
-                    image: AssetImage(
-                      "assets/pngtree-fitness-logo-logo-png-image_4569733-removebg-preview.png",
-                    ),
+                    image: AssetImage("assets/fit.png"),
                     height: 200,
                     width: 200,
                   ),
